@@ -20,6 +20,7 @@ if %type%==0 (
     goto search
 )
 
+:videoVar
 echo 选择你需要下载的视频，用数字表示，使用github为下载源如果遇到错误请重新启动此cmd下载
 echo 1=原神
 echo 2=APEX
@@ -41,6 +42,7 @@ if %video%==2 (
     powershell wget "https://github.com/seven7a/calabiyau_logo_replace/raw/master/video/raillogo00000525.mp4" -OutFile .\videoTemp\TX_LOGO_PC.mp4
 ) ELSE (
     echo 输入可能有误？没有找到此视频
+    goto videoVar
 )
 
 if NOT exist .\videoTemp\IDreamSky_Logo_PC.mp4 goto download
