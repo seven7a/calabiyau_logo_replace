@@ -1,4 +1,5 @@
 @ECHO OFF
 chcp 65001
-set /p loc=未找到游戏可执行文件，请手动输入地址-->
-echo %loc%
+set temp=1
+set temp1=2
+if %temp%==1 if %temp1%==2 echo 11111
